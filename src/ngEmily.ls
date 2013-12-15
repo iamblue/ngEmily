@@ -3,7 +3,7 @@ const eMediaDirective = (eMediaService)->
 	replace: true
 	transclude: true
 	template: '<video class="camera" autoplay="" /><div ng-transclude></div>',
-
+ 
 	link: !(scope, elem, attrs) ->
 		_w = Number(attrs.width.replace('px'))
 		_h = Number(attrs.height.replace('px'))
