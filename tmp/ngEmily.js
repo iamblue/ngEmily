@@ -28,6 +28,7 @@
         } else {
           userMedia = eMediaService.getUserMedia();
           videoElement = document.querySelector('video');
+          console.log(videoElement);
           navigator.getUserMedia({
             video: {
               mandatory: {

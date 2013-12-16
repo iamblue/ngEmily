@@ -19,10 +19,11 @@ const eMediaDirective = (eMediaService)->
 			console.log(err)
 
 		if (!eMediaService.hasUserMedia)
-			false
+			false 
 		else 
 			userMedia = eMediaService.getUserMedia()
 			videoElement = document.querySelector('video')
+			console.log(videoElement);
 
 			navigator.getUserMedia({
 				video:

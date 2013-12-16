@@ -13,16 +13,17 @@ const eMediaDirective = (eMediaService)->
 			else
 				vendorURL = window.URL || window.webkitURL
 				videoElement.src = window.URL.createObjectURL(stream)
-
+				
 			videoElement.play()
 		error = (err)!->
 			console.log(err)
 
 		if (!eMediaService.hasUserMedia)
-			false
+			false 
 		else 
 			userMedia = eMediaService.getUserMedia()
 			videoElement = document.querySelector('video')
+			console.log(videoElement);
 
 			navigator.getUserMedia({
 				video:
